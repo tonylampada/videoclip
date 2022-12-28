@@ -14,7 +14,7 @@ def clip_encode_image(image: str) -> str:
 
   # The request body should contain a JSON object formatted as {"image":"YOUR_BASE64_ENCODED_IMG_STRING"}
   payload = {'image': encoded_string.decode("utf-8")}
-  url = "https://api.roboflow.com/v1/clip/encode"
+  url = "https://clip-featurize-esrwrrt7ma-uc.a.run.app/predict"
 
   # get response from CLIP endpoint
   response = requests.post(url, json = payload).content

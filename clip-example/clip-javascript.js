@@ -4,7 +4,7 @@ function clipEncodeImage(canvas) {
 
     // The request body should contain a JSON object formatted as {"image":"YOUR_BASE64_ENCODED_IMG_STRING"}
     const payload = { image: jpeg };
-    const url = 'https://api.roboflow.com/v1/clip/encode';
+    const url = 'https://clip-featurize-esrwrrt7ma-uc.a.run.app/predict';
 
     // use axios to send a POST request to the CLIP encoding endpoint
     return axios.post(url, payload).then(response => {
