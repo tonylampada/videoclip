@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>hello</h1>
-    <HelloWorld msg="Welcome to VideoClip Vue.js App"/>
+    <VideoClip/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VideoClip from './components/VideoClip.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VideoClip
   }
 }
 </script>
